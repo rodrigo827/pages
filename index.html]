@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Landing Page Incrível</title>
+    <style>
+        /* Configurações Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Cabeçalho / Logo */
+        header {
+            background-color: #fff;
+            padding: 20px 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4F46E5;
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #10B981;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #059669;
+        }
+
+        /* Seção de Recursos/Benefícios */
+        .features {
+            padding: 80px 5%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #fff;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #1F2937;
+        }
+
+        /* Seção de Captura (Formulário) */
+        .capture-section {
+            padding: 80px 5%;
+            text-align: center;
+            background-color: #f3f4f6;
+        }
+
+        .capture-section h2 {
+            margin-bottom: 15px;
+            color: #1F2937;
+        }
+
+        .capture-form {
+            max-width: 500px;
+            margin: 30px auto 0 auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .capture-form input[type="email"] {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .capture-form button {
+            background-color: #4F46E5;
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .capture-form button:hover {
+            background-color: #4338CA;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1F2937;
+            color: #9CA3AF;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 30px; }
+            .capture-form { flex-direction: column; }
+            .capture-form button { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MinhaMarca</div>
+    </header>
+
+    <section class="hero">
+        <h1>Transforme sua rotina com nossa solução</h1>
+        <p>A ferramenta perfeita para otimizar seu tempo, organizar seus projetos e alcançar resultados surpreendentes todos os dias.</p>
+        <a href="#cadastro" class="cta-button">Começar Agora Grátis</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🚀 Alta Velocidade</h3>
+            <p>Esqueça a lentidão. Nosso sistema foi otimizado para entregar tudo em tempo real.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔒 Segurança Total</h3>
+            <p>Seus dados criptografados e protegidos com os padrões mais rígidos do mercado.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📊 Relatórios Claros</h3>
+            <p>Visualize seu crescimento através de gráficos simples e direto ao ponto.</p>
+        </div>
+    </section>
+
+    <section class="capture-section" id="cadastro">
+        <h2>Pronto para mudar de nível?</h2>
+        <p>Inscreva-se abaixo para receber acesso antecipado e exclusivo.</p>
+        
+        <form class="capture-form" onsubmit="alert('E-mail cadastrado com sucesso!'); return false;">
+            <input type="email" placeholder="Digite seu melhor e-mail" required>
+            <button type="submit">Quero Acesso</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MinhaMarca. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
